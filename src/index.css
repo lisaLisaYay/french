@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.answer-form-container {
+  display: grid;
+  place-items: center;
+}
+
+.answer-form-container input {
+  width: 300px;
+  font-size: 15px;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid rgb(189, 194, 199);
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+input:focus{
+  outline: none;
+}
+
+.answer-form-container label {
+  text-transform: capitalize;
+  margin-right: 10px;
+}
+
+.answer-form-container button{
+  width: 70px;
+}
+
+.answer-field {
+  display: flex;
+  margin: 10px 0;
+}
+
+.answer-field label {
+  width: 70px;
+}
+
+.wrap {
+  display: grid;
+  place-items: center;
+}
+
+.current-result-verb-wrap {
+  display: grid;
+  grid-template-columns:  1fr 1fr  1fr 1fr 1fr ;
+}
+
+.current-result-verb-container{
+  width: fit-content;
+  margin: 15px;
+  width: 200px;
+}
+
+.current-result-verb-container h4{
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.verb-result-wrap {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 10px;
+  width: 200px;
+}
+
+.pronoun {
+  width: 60px;
+  text-transform: capitalize;
+  display: flex;
+}
+
+.verb-result{
+  display: flex;
+}
+.answer-p {
+  width: 300px;
+  display: flex;
+  font-size: 15px;
+  border-bottom: 1px solid rgb(189, 194, 199);
+}
+
+.test-corrections {
+  width: 150px;
+}
+
+/* START PAGE*/
+
+.start-page-container {
+  display: grid;
+  place-items: center;
+}
+
+.start-page {
+  margin-top: 200px;
+}
+
+.search-container {
+  display: grid;
+  place-items: center;
+}
+
+.search-container input{
+  width: 300px;
+  padding: 0;
+  font-size: 16px;
+  padding: 15px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-bottom: 10px;
+}
+
+.verb-choise-field {
+  border: 1px solid grey;
+  padding: 15px;
+  width: 300px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-bottom: 10px;
+}
+
+.verb-choice-item {
+  width: 300px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px;
+  color: rgb(121, 123, 124);
+}
+
+.choosen-verbs-wrap {
+  margin-bottom: 20px;
+}
+
+.choosen-verb-container {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 5px 0;
+}
+
+.choosen-verb-container p{
+  margin: 5px 0;
+}
+
+.dlt-btn{
+  color: red;
+  cursor: pointer;
+}
+
+.select-temps {
+  display: grid;
+}
+
+.select-temps select{
+  margin: 5px 0;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.btn {
+  background-color: rgb(101, 45, 255);
+  border: none;
+  width: 200px;
+  height: 35px;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 30px 0;
+}
+
+.btn:hover {
+  background-color: rgb(125, 86, 255);
+}
+
+.btn:active {
+  background-color: rgb(38, 4, 148);
+}
+
+.weekly-results {
+  display: flex;
+  justify-content: center;
+  margin: 0, 10px;
+}
+
+.by-day-results-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0 10px;
+}
+
+.by-day-results {
+  display: grid;
+  place-items:center;
+}
+
+.scale-info p {
+  color: rgb(142, 150, 156);
+  font-size: 13px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.by-day-results-wrap p{
+  color: rgb(142, 150, 156);
+  font-size: 13px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.not-practiced {
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.not-practiced p{
+  color: rgb(142, 150, 156);
+  font-size: 13px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.scale-container{
+  display: flex;
+}
+
+@media screen and (max-width:1200px) {
+  .current-result-verb-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+}
